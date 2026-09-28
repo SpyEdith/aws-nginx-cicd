@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liza Patel - Software Developer & MSc.IT Student Portfolio. Skilled in Web Development, PHP, Python, MySQL, and IoT projects.">
+    <meta name="keywords" content="Liza Patel, Portfolio, Web Developer, MSc.IT, Software Developer, PHP, Python, MySQL, Ahmedabad">
+    <meta name="author" content="Liza Patel">
+    <title>Liza Patel | Software & Web Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Background Decorative Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-wrapper" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">Liza<span class="highlight">Patel</span></span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" title="Switch Light/Dark Mode" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta-btn">Hire Me</a>
+                <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    
+
+                    <h1 class="hero-title reveal">
+                        Hello, I'm <br>
+                        <span class="gradient-text">Liza Patel</span>
+                    </h1>
+
+                    <div class="typewriter-container reveal">
+                        <span class="typewriter-prefix">I am a </span>
+                        <span class="typewriter-text" id="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-description reveal">
+                        Pursuing <strong>MSc.IT Software Development (Web & Mobile)</strong> with a strong foundation in building dynamic web applications, backend systems with PHP & MySQL, and intelligent Python/IoT solutions.
+                    </p>
+
+                    <div class="hero-buttons reveal">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <button class="btn btn-glass" id="downloadCvBtn">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span>View CV</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-contacts-quick reveal">
+                        <a href="mailto:lizapatel1805@gmail.com" class="quick-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>lizapatel1805@gmail.com</span>
+                        </a>
+                        <a href="tel:+917862857910" class="quick-link">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 7862857910</span>
+                        </a>
+                        <span class="quick-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Ahmedabad, Gujarat</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="visual-card-wrapper">
+                        <div class="avatar-glow"></div>
+                        <div class="code-terminal-card">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <div class="terminal-title">liza_patel_profile.json</div>
+                            </div>
+                            <div class="terminal-body">
+                                <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Liza Patel"</span>,
+  <span class="code-prop">degree</span>: <span class="code-str">"MSc.IT (5-Yr Integrated)"</span>,
+  <span class="code-prop">undergrad</span>: <span class="code-str">"BSc.IT (Distinction 7.39 CGPA)"</span>,
+  <span class="code-prop">location</span>: <span class="code-str">"Ahmedabad, India"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-str">"HTML/CSS/JavaScript"</span>,
+    <span class="code-str">"PHP & MySQL"</span>,
+    <span class="code-str">"Python & PHP"</span>,
+    <span class="code-str">"IoT & WordPress"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-str">"Creative Problem Solving & Code"</span>,
+  <span class="code-prop">readyToLearn</span>: <span class="code-bool">true</span>
+};</code></pre>
+                            </div>
+                        </div>
+
+                        <!-- Floating Skill Badges -->
+                        <div class="floating-badge badge-php">
+                            <i class="fa-brands fa-php"></i>
+                            <span>PHP & MySQL</span>
+                        </div>
+                        <div class="floating-badge badge-js">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="floating-badge badge-python">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="floating-badge badge-iot">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>IoT & Arduino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge"><i class="fa-solid fa-user"></i> Get To Know Me</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">Passionate IT student dedicated to crafting responsive web solutions and tackling real-world problems.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-bio reveal">
+                        <div class="bio-icon-header">
+                            <div class="icon-bubble">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <h3>Software & Web Developer</h3>
+                                <p class="bio-subtitle">MSc.IT Integrated (Web & Mobile Development)</p>
+                            </div>
+                        </div>
+                        
+                        <p class="bio-text">
+                            I am an enthusiastic IT student with a strong passion for software development and creative problem-solving. I completed my <strong>B.Sc. IT with First Class with Distinction</strong> from Centre for Professional Courses (CPC).
+                        </p>
+                        <p class="bio-text">
+                            I enjoy exploring new technologies and building impactful, real-world solutions. My goal is to apply my technical capabilities in web and software engineering to help forward-thinking organizations grow while continuously refining my craft. I am always eager to take on new challenges, adapt smoothly to diverse environments, and deliver excellence in every situation.
+                        </p>
+
+                        <div class="about-highlights-row">
+                            <div class="highlight-item">
+                                <div class="highlight-num">7.39</div>
+                                <div class="highlight-label">BSc.IT CGPA (Distinction)</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-num">3+</div>
+                                <div class="highlight-label">Academic Projects</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-num">5+</div>
+                                <div class="highlight-label">Core Technologies</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-num">100%</div>
+                                <div class="highlight-label">Dedication & Adaptability</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Details & Strengths Card -->
+                    <div class="about-card personal-details-card reveal">
+                        <h3 class="card-heading"><i class="fa-solid fa-address-card"></i> Personal Profile</h3>
+                        
+                        <ul class="personal-info-list">
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-signature"></i> Full Name:</span>
+                                <span class="info-value">Liza Patel</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-cake-candles"></i> Date of Birth:</span>
+                                <span class="info-value">18th May 2004</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-venus"></i> Gender:</span>
+                                <span class="info-value">Female</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Current Address:</span>
+                                <span class="info-value">Ahmedabad, Gujarat</span>
+                            </li>
+                            <li>
+                                <span class="info-label"><i class="fa-solid fa-language"></i> Languages Known:</span>
+                                <span class="info-value">Gujarati, Hindi, English</span>
+                            </li>
+                        </ul>
+
+                        <div class="hobbies-block">
+                            <h4 class="sub-heading"><i class="fa-solid fa-heart"></i> Hobbies & Interests</h4>
+                            <div class="hobbies-tags">
+                                <span class="hobby-tag"><i class="fa-solid fa-gamepad"></i> Playing / Sports</span>
+                                <span class="hobby-tag"><i class="fa-solid fa-utensils"></i> Cooking</span>
+                                <span class="hobby-tag"><i class="fa-solid fa-plane-departure"></i> Travelling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge"><i class="fa-solid fa-microchip"></i> My Expertise</span>
+                    <h2 class="section-title">Technical & Soft <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">A curated set of technologies, tools, and personal strengths I bring to every project.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Web Development -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon icon-web">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <h3>Web Development</h3>
+                                <p>Frontend & UI Architecture</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-mobile-screen-button" style="color: #38bdf8;"></i>
+                                <span>Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon icon-code">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <div>
+                                <h3>Programming & Backend</h3>
+                                <p>Logic, Server-side & Languages</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-php" style="color: #777bb4;"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-python" style="color: #3776ab;"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & CMS -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon icon-database">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div>
+                                <h3>Database & CMS</h3>
+                                <p>Data Modeling & Content Management</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-server" style="color: #00758f;"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-wordpress" style="color: #21759b;"></i>
+                                <span>WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skill-category-card reveal">
+                        <div class="category-header">
+                            <div class="category-icon icon-tools">
+                                <i class="fa-solid fa-toolbox"></i>
+                            </div>
+                            <div>
+                                <h3>Tools & Platforms</h3>
+                                <p>Development & Productivity Software</p>
+                            </div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-microchip" style="color: #00979d;"></i>
+                                <span>Arduino IDE</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-file-excel" style="color: #107c41;"></i>
+                                <span>Microsoft Excel</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-file-powerpoint" style="color: #d83b01;"></i>
+                                <span>Microsoft PowerPoint</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-brands fa-github" style="color: #94a3b8;"></i>
+                                <span>Git & GitHub</span>
+                            </div>
+                            <div class="skill-pill">
+                                <i class="fa-solid fa-code" style="color: #007acc;"></i>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specialized / Soft Skills -->
+                    <div class="skill-category-card skill-card-wide reveal">
+                        <div class="category-header">
+                            <div class="category-icon icon-soft">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h3>Specialized & Professional Strengths</h3>
+                                <p>Core soft skills and analytical mindset</p>
+                            </div>
+                        </div>
+                        <div class="strengths-grid">
+                            <div class="strength-box">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <h4>Creativity</h4>
+                                <p>Innovative design thinking and intuitive user experiences.</p>
+                            </div>
+                            <div class="strength-box">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <h4>Problem-Solving</h4>
+                                <p>Structured debugging and algorithmic problem resolution.</p>
+                            </div>
+                            <div class="strength-box">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                                <h4>Quick Learning</h4>
+                                <p>Fast grasping of new languages, libraries, and frameworks.</p>
+                            </div>
+                            <div class="strength-box">
+                                <i class="fa-solid fa-users"></i>
+                                <h4>Adaptability</h4>
+                                <p>Seamless adjustment to team environments and evolving project goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Academic <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications and IoT systems developed throughout my academic journey.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filter-buttons reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Applications</button>
+                    <button class="filter-btn" data-filter="iot">IoT & Hardware</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Society Hub -->
+                    <div class="project-card reveal" data-category="web" data-project="society-hub">
+                        <div class="project-badge solo-badge">
+                            <i class="fa-solid fa-user-check"></i> Solo Project
+                        </div>
+                        <div class="project-img-preview preview-society">
+                            <div class="preview-overlay">
+                                <i class="fa-solid fa-building-user project-icon-lg"></i>
+                                <span class="preview-tag">3-Panel Web System</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-tag">Web Application & Management</div>
+                            <h3 class="project-title">Society Hub (Society Management System)</h3>
+                            <p class="project-desc">
+                                A comprehensive web portal featuring 3 distinct panels (Admin, Member, Watchman) to seamlessly manage society maintenance payments, visitor tracking, complaints, and digital notices.
+                            </p>
+                            
+                            <div class="project-role">
+                                <strong>Role:</strong> Frontend design, backend development, database integration, and complete system implementation.
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+
+                            <div class="project-card-footer">
+                                <button class="btn btn-outline btn-sm btn-project-detail" data-target="society-hub">
+                                    <span>View Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Electro Bazar -->
+                    <div class="project-card reveal" data-category="web" data-project="electro-bazar">
+                        <div class="project-badge group-badge">
+                            <i class="fa-solid fa-users"></i> Group Project
+                        </div>
+                        <div class="project-img-preview preview-electro">
+                            <div class="preview-overlay">
+                                <i class="fa-solid fa-cart-shopping project-icon-lg"></i>
+                                <span class="preview-tag">E-Commerce Platform</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-tag">E-Commerce Web Portal</div>
+                            <h3 class="project-title">Electro Bazar</h3>
+                            <p class="project-desc">
+                                An interactive e-commerce platform offering categorized electronic product browsing, dynamic cart workflow, user authentication, and robust admin product inventory management.
+                            </p>
+
+                            <div class="project-role">
+                                <strong>Role:</strong> Frontend UI/UX design and database integration.
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+
+                            <div class="project-card-footer">
+                                <button class="btn btn-outline btn-sm btn-project-detail" data-target="electro-bazar">
+                                    <span>View Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Traffic Signal -->
+                    <div class="project-card reveal" data-category="iot" data-project="smart-traffic">
+                        <div class="project-badge iot-badge">
+                            <i class="fa-solid fa-microchip"></i> Solo IoT Project
+                        </div>
+                        <div class="project-img-preview preview-traffic">
+                            <div class="preview-overlay">
+                                <i class="fa-solid fa-traffic-light project-icon-lg"></i>
+                                <span class="preview-tag">IoT & Embedded Systems</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-category-tag">Hardware-Software Integration</div>
+                            <h3 class="project-title">Smart Traffic Signal with Emergency Vehicle Detection</h3>
+                            <p class="project-desc">
+                                An intelligent IoT system designed to detect approaching emergency vehicles (ambulances, fire engines) and automatically prioritize signal transitions in real-time to clear congestion and save lives.
+                            </p>
+
+                            <div class="project-role">
+                                <strong>Role:</strong> Algorithm design and hardware-software integration.
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Arduino IDE</span>
+                                <span class="tech-tag">IoT Sensors</span>
+                            </div>
+
+                            <div class="project-card-footer">
+                                <button class="btn btn-outline btn-sm btn-project-detail" data-target="smart-traffic">
+                                    <span>View Details</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Academic Journey Section -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Pathway</span>
+                    <h2 class="section-title">Education & <span class="gradient-text">Qualifications</span></h2>
+                    <p class="section-subtitle">My academic history, achievements, and educational qualifications.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Current Master's -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon current">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-badge badge-active">Currently Pursuing</span>
+                                <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> 5-Year Integrated Program</span>
+                            </div>
+                            <h3 class="degree-title">MSc.IT Software Development (Web & Mobile)</h3>
+                            <h4 class="institute-name"><i class="fa-solid fa-university"></i> Postgraduate Studies</h4>
+                            <p class="timeline-desc">
+                                Advanced coursework focused on enterprise web architectures, mobile development frameworks, advanced software engineering, cloud systems, and database optimization.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bachelor's Degree -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-badge badge-success">First Class with Distinction</span>
+                                <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> 2022 - 2025</span>
+                            </div>
+                            <h3 class="degree-title">BSc.IT Software Development</h3>
+                            <h4 class="institute-name"><i class="fa-solid fa-building-columns"></i> Centre for Professional Courses (CPC)</h4>
+                            <div class="score-card">
+                                <span class="score-label">Graduation Score:</span>
+                                <span class="score-value">7.39 CGPA</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Built solid foundations in object-oriented programming, data structures, full-stack web technologies (HTML, CSS, JS, PHP), relational databases (MySQL), and practical software engineering.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary (HSC) -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-badge badge-info">Higher Secondary (HSC)</span>
+                                <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> Completed 2022</span>
+                            </div>
+                            <h3 class="degree-title">12th Grade (HSC)</h3>
+                            <h4 class="institute-name"><i class="fa-solid fa-school-flag"></i> Hiramani School</h4>
+                            <div class="score-card">
+                                <span class="score-label">Percentage:</span>
+                                <span class="score-value">76%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary School (SSC) -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-badge badge-info">Secondary School (SSC)</span>
+                                <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> Completed 2020</span>
+                            </div>
+                            <h3 class="degree-title">10th Grade (SSC)</h3>
+                            <h4 class="institute-name"><i class="fa-solid fa-school-flag"></i> Hiramani School</h4>
+                            <div class="score-card">
+                                <span class="score-label">Percentage:</span>
+                                <span class="score-value">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">Feel free to reach out for software development roles, collaborations, or project inquiries.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-column reveal">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email Address</span>
+                                <a href="mailto:lizapatel1805@gmail.com" class="contact-value">lizapatel1805@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" data-copy="lizapatel1805@gmail.com" title="Copy Email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone Number</span>
+                                <a href="tel:+917862857910" class="contact-value">+91 7862857910</a>
+                            </div>
+                            <button class="copy-btn" data-copy="+917862857910" title="Copy Phone Number">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Ahmedabad, Gujarat, India</span>
+                            </div>
+                        </div>
+
+                        <div class="availability-card">
+                            <div class="avail-indicator">
+                                <span class="avail-ping"></span>
+                                <span class="avail-dot"></span>
+                            </div>
+                            <div>
+                                <h4>Open to New Opportunities</h4>
+                                <p>Ready for internships, developer roles, and freelance collaborations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="contact-form-column reveal">
+                        <div class="form-container-card">
+                            <h3 class="form-title">Send a Message</h3>
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Your Name <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <span class="error-msg" id="nameError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Your Email <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="emailError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-tag input-icon"></i>
+                                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message <span class="req">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-message input-icon textarea-icon"></i>
+                                        <textarea id="message" name="message" rows="4" placeholder="Hello Liza, I'd like to discuss..." required></textarea>
+                                    </div>
+                                    <span class="error-msg" id="messageError"></span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                    <span>Send Message</span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-symbol">&lt;</span>
+                    <span class="logo-text">Liza<span class="highlight">Patel</span></span>
+                    <span class="logo-symbol">/&gt;</span>
+                </a>
+                <p class="footer-tagline">MSc.IT Software Developer • Passionate about building seamless digital experiences.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Connect Directly</h4>
+                <p><i class="fa-solid fa-envelope"></i> lizapatel1805@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7862857910</p>
+                <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>© <span id="currentYear"></span> Liza Patel. All rights reserved.</p>
+                <p>Designed & Crafted with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> for Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Interactive Project Modal -->
+    <div class="modal-backdrop" id="projectModal">
+        <div class="modal-dialog">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Dynamically injected via script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Preview Modal -->
+    <div class="modal-backdrop" id="cvModal">
+        <div class="modal-dialog cv-modal-dialog">
+            <button class="modal-close-btn" id="cvModalCloseBtn" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="cv-modal-content">
+                <div class="cv-preview-header">
+                    <h2><i class="fa-solid fa-file-lines"></i> Liza Patel - Curriculum Vitae</h2>
+                    <div class="cv-actions">
+                        <button class="btn btn-primary btn-sm" onclick="window.print()">
+                            <i class="fa-solid fa-print"></i> Print CV
+                        </button>
+                    </div>
+                </div>
+                <div class="cv-paper">
+                    <div class="cv-paper-header">
+                        <h1>LIZA PATEL</h1>
+                        <div class="cv-paper-subtitle">MSC.IT Software Development (Web & Mobile) 5 Yr. Integrated</div>
+                        <div class="cv-paper-contacts">
+                            <span><i class="fa-solid fa-phone"></i> +91 7862857910</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</span>
+                            <span><i class="fa-solid fa-envelope"></i> lizapatel1805@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="cv-paper-section">
+                        <h3 class="cv-heading">ABOUT ME</h3>
+                        <p>I am an IT student with a passion for software development and solving problems creatively. I have completed my B.Sc. IT with First Class with Distinction. I enjoy learning new technologies and working on real-world challenges. My goal is to use my technical skills to help organizations grow while continuously improving my abilities. I am always ready to face new challenges, adapt to new environments, and give my best in every situation.</p>
+                    </div>
+
+                    <div class="cv-paper-section">
+                        <h3 class="cv-heading">EDUCATION</h3>
+                        <div class="cv-edu-item">
+                            <div class="cv-item-row">
+                                <strong>Centre for Professional Courses (CPC)</strong>
+                                <span>2022 - 2025</span>
+                            </div>
+                            <div>BSc.IT Software Development - <strong>7.39 CGPA (Distinction)</strong></div>
+                        </div>
+                        <div class="cv-edu-item">
+                            <div class="cv-item-row">
+                                <strong>Hiramani School</strong>
+                                <span>2022</span>
+                            </div>
+                            <div>Higher Secondary (HSC) – <strong>76%</strong></div>
+                        </div>
+                        <div class="cv-edu-item">
+                            <div class="cv-item-row">
+                                <strong>Hiramani School</strong>
+                                <span>2020</span>
+                            </div>
+                            <div>Secondary School (SSC) – <strong>70%</strong></div>
+                        </div>
+                    </div>
+
+                    <div class="cv-paper-section">
+                        <h3 class="cv-heading">SKILLS</h3>
+                        <p><strong>Web Development:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Programming Languages & Frameworks:</strong> Python, PHP</p>
+                        <p><strong>Database Management:</strong> MySQL</p>
+                        <p><strong>CMS:</strong> WordPress</p>
+                        <p><strong>Tools & Platforms:</strong> Microsoft Excel, Microsoft PowerPoint, Arduino IDE, Git & VS Code</p>
+                        <p><strong>Specialized Skills:</strong> Creativity, Problem-Solving, Quick Learning, Adaptability</p>
+                    </div>
+
+                    <div class="cv-paper-section">
+                        <h3 class="cv-heading">ACADEMIC PROJECTS</h3>
+                        <div class="cv-project-entry">
+                            <h4>Society Hub (Society Management System) <em>(Solo Software Project)</em></h4>
+                            <p><strong>Overview:</strong> Society Hub is a web-based project with 3 panels (Admin, Member, Watchman) that allows users to manage society activities like maintenance payments, complaints, notices, and visitor entries. Admin can manage members, payments, complaints, and records using PHP and MySQL with a user-friendly frontend.</p>
+                            <p><strong>Role:</strong> Frontend design, backend development, database integration, and complete system implementation.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                        </div>
+                        <div class="cv-project-entry">
+                            <h4>Electro Bazar <em>(Group Software Project)</em></h4>
+                            <p><strong>Overview:</strong> Designed and developed an e-commerce platform offering category-wise product listing, purchase process, and admin functionality.</p>
+                            <p><strong>Role:</strong> Frontend design and database integration.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                        </div>
+                        <div class="cv-project-entry">
+                            <h4>Smart Traffic Signal with Emergency Vehicle Detection <em>(Solo IoT Project)</em></h4>
+                            <p><strong>Overview:</strong> Built an IoT system to detect emergency vehicles and adjust traffic signals in real time to prioritize their passage, enhancing safety and reducing delays.</p>
+                            <p><strong>Role:</strong> Algorithm design and hardware-software integration.</p>
+                            <p><strong>Technologies:</strong> Python, C++, Arduino IDE</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-paper-section">
+                        <h3 class="cv-heading">PERSONAL DETAILS</h3>
+                        <p><strong>DOB:</strong> 18th May 2004 | <strong>Gender:</strong> Female</p>
+                        <p><strong>Languages:</strong> Gujarati, Hindi, English</p>
+                        <p><strong>Current Address:</strong> Ahmedabad, Gujarat</p>
+                        <p><strong>Hobbies:</strong> Playing, Cooking, Travelling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
